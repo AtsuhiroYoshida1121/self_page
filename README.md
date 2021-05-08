@@ -1,1 +1,2 @@
-# AtsuhiroYoshida1121.github.io
+# self_page
+
