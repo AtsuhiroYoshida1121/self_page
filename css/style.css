@@ -1,0 +1,446 @@
+@charset "UTF-8";
+
+/*共通部分
+------------------------------------------------- */
+html{
+    font-size: 100%;
+}
+
+body {
+    font-family: "Yu Gothic Medium", "遊ゴシック Medium", YuGothic, "遊ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+    line-height: 1.7;
+    color: rgba(255,250,250,1.0);
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+.big-bg {
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+#home {
+    background-image: url(../images/main-bg.jpg);
+    min-height: 100vh;
+}
+
+#about {
+    background-image: url(../images/about-bg.jpg);
+    min-height: 100vh;
+}
+
+#research {
+    background-image: url(../images/research-bg.jpg);
+    min-height: 100vh;
+}
+
+#blog {
+    background-image: url(../images/blog-bg.jpg);
+    min-height: 100vh;
+}
+
+#contact {
+    background-image: url(../images/main-bg.jpg);
+    min-height: 100vh;
+}
+
+
+
+/*HEADER
+------------------------------------------------- */
+.page-header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main-nav {
+    display: flex;
+    font-size: 1.25rem;
+    margin-top: 34px;
+    margin-bottom: 34px;
+    list-style: none;
+}
+
+.main-nav li {
+    margin-left: 36px;
+}
+
+.main-nav a {
+    color: rgba(255,250,250,0.8);
+}
+
+.main-nav a:hover {
+    color: rgba(255,250,250,1);
+}
+
+/*FOOTER
+------------------------------------------------- */
+footer {
+    background-color: black;
+}
+
+.page-footer {
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+/*index.html
+------------------------------------------------- */
+
+.home-content {
+    text-align: center;
+    margin-top: 15%;
+
+
+}
+
+.page-title {
+    font-size: 4rem;
+    font-family: 'Philosopher', serif;
+    font-weight: normal;
+    animation: fadeIn 3s ease 0s 1 normal;
+}
+
+.home-content p {
+    font-size: 1.125rem;
+    font-family: 'Philosopher', serif;
+    margin: 10px 0 42px 0;
+    animation: fadeIn 5s ease 0s 1 normal;
+
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+
+/*about.html
+------------------------------------------------- */
+
+.about-contents {
+    min-height: 100vh;
+    background-color:gray;
+    border: 1px solid gray;
+}
+
+.about-box-1 {
+    margin-top: 15%;
+    padding: 25px;
+    border: 3px solid rgba(255,250,250,0.9);
+    border-radius: 5px;
+    max-width: 480px;
+}
+
+
+
+.about-box-2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15%;
+    margin-bottom: 10%;
+
+}
+
+.face {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-left: 150px;
+    margin-top: 25px;
+
+}
+
+.sub-box {
+    padding: 25px;
+    border: 3px solid rgba(255,250,250,0.9);
+    border-radius: 5px;
+}
+
+.box-title {
+    font-size: 2rem;
+    font-family: 'Philosopher', serif;
+
+}
+
+.box-content {
+    font-size: 1.125rem;
+    font-family: 'Philosopher', serif;
+    margin: 10px 0 0 0;
+}
+
+/*research.html
+------------------------------------------------- */
+
+.research-contents {
+    min-height: 200vh;
+    background-color:gray;
+    border: 1px solid gray;
+}
+
+.research-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    border: 3px solid  rgba(255,250,250,0.9);
+    margin: 15% 0;
+
+
+}
+
+.research-img {
+    border-radius: 10px;
+    width: 450px;
+    height: 700px;
+
+}
+
+.research-box {
+    margin: auto 0;
+    max-width: 400px;
+
+}
+
+
+.research-title-1 {
+    font-size: 2rem;
+    font-family: 'Philosopher', serif;
+    text-align: center;
+}
+
+.research-title-2 {
+    font-size: 1.25rem;
+    font-family: 'Philosopher', serif;
+    margin: 20px 0;
+    text-align: center;
+
+}
+
+/*blog.html
+------------------------------------------------- */
+
+.blog-contents {
+    min-height: 100vh;
+    background-color:gray;
+    border: 1px solid gray;
+}
+
+.blog-title {
+    margin: 10% 0 35px 0;
+}
+
+.blog-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10%;
+
+}
+
+.blog-main {
+    max-width: 700px;
+
+}
+
+.post-info {
+    position: relative;
+    padding: 5px;
+    margin-bottom: 40px;
+    border-radius: 25px;
+    border: 1px solid rgba(255,250,250,0.9);
+}
+
+.post-title {
+    font-family: "Yu Mincho", "YuMincho", serif;
+    font-size: 2rem;
+    font-weight: normal;
+    margin-left: 120px;
+
+}
+
+.post-date {
+    background: black;
+    border-radius: 50%;
+    color: rgba(255,250,250,0.9);
+    width: 100px;
+    height: 100px;
+    font-size: 1.625rem;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    padding-top: 10px;
+}
+
+.post-date span {
+    font-size: 1rem;
+    border-top: 1px rgba(255,255,255,.5) solid;
+    padding-top: 1px;
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.post-cat {
+    margin-left: 120px;
+
+}
+
+.article-img {
+    margin-bottom: 20px;
+    width: 100%;
+    border-radius: 5px;
+    max-width: 700px;
+}
+
+article p {
+    margin-bottom: 1rem;
+    margin-left: 10px;
+    font-family: "Yu Mincho", "YuMincho", serif;
+    font-size: 1rem;
+
+}
+
+
+.sub-title {
+    font-size: 1.125rem;
+    padding: 0 8px 8px;
+    border-bottom: 2px rgba(255,250,250,0.9) solid;
+    font-weight: normal;
+}
+
+.sub-menu {
+    margin-bottom: 60px;
+    list-style: none;
+
+}
+
+.sub-menu li {
+    border-bottom: 1px rgba(255,250,250,0.9) solid;
+}
+
+.sub-menu a {
+    color: rgba(255,250,250,0.8);
+    padding: 10px;
+    display: block;
+}
+
+.sub-menu a:hover {
+    color: rgba(255,250,250,1)
+}
+
+aside p {
+    padding: 12px 10px;
+    list-style: none;
+}
+
+/*contact.html
+------------------------------------------------- */
+
+form {
+    animation: fadeIn 3s ease 0s 1 normal;
+}
+@keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+form div {
+    margin-bottom: 14px;
+}
+
+label {
+    font-size: 1.125rem;
+    margin-bottom: 10px;
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    background: rgba(255,255,255,.5);
+    border: 1px;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    max-width: 240px;
+}
+
+textarea {
+    width: 100%;
+    max-width: 480px;
+    height: 6rem;
+}
+
+input[type="submit"] {
+    border: none;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.button {
+    font-size: 1.375rem;
+    background: gray;
+    color: #fff;
+    border-radius: 5px;
+    padding: 18px 32px;
+}
+
+#location {
+    padding: 4% 0;
+    background-color: #595857;
+}
+
+#location .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.location-info {
+    width: 25%;
+}
+
+.location-info p {
+    padding: 12px 10px;
+}
+
+.location-map {
+    width: 74%;
+}
+
+iframe {
+    width: 100%;
+}
+
+#sns {
+    background: #FAF7F0;
+    color: #69493c;
+    padding: 4% 0;
+}
+
+#sns  .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+#sns-box {
+    width: 30%;
+}

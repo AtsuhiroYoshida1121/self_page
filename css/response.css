@@ -1,0 +1,29 @@
+/*モバイル版
+------------------------------------------------- */
+@media (max-width: 600px) {
+
+    #home {
+        background-image: url(../images/main-bg.jpg);
+        min-height: 10s0vh;
+    }
+
+    #about {
+        background-image: url(../images/about-bg.jpg);
+        min-height: 50vh;
+    }
+
+    #research {
+        background-image: url(../images/research-bg.jpg);
+        min-height: 50vh;
+    }
+
+    #blog {
+        background-image: url(../images/blog-bg.jpg);
+        min-height: 50vh;
+    }
+
+    #contact {
+        background-image: url(../images/main-bg.jpg);
+        min-height: 50vh;
+    }
+}
